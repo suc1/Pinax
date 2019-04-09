@@ -1,0 +1,4 @@
+1. https://pinaxproject.com/pinax/
+2. Quick Start
+	pip3 install pinax-cli
+	pinax start account mysite
