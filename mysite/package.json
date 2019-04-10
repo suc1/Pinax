@@ -30,11 +30,11 @@
     "babel-preset-env": "1.6.1",
     "babelify": "8.0.0",
     "bootstrap": "4.0.0",
-    "browser-sync": "2.23.6",
+    "browser-sync": "^2.26.3",
     "browserify": "15.2.0",
     "chai": "4.1.2",
     "concurrently": "3.5.1",
-    "cssnano": "3.10.0",
+    "cssnano": "^4.1.10",
     "cssnano-cli": "1.0.5",
     "envify": "4.1.0",
     "eslint": "4.16.0",
@@ -44,9 +44,9 @@
     "jsdom": "11.6.2",
     "jsdom-global": "3.0.2",
     "mocha": "5.0.0",
-    "node-sass": "4.7.2",
-    "onchange": "3.3.0",
+    "node-sass": "^4.11.0",
+    "onchange": "^5.2.0",
     "uglify-js": "3.3.9",
-    "watchify": "3.10.0"
+    "watchify": "^3.11.1"
   }
 }
