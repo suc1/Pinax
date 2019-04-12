@@ -78,7 +78,7 @@ STATICFILES_FINDERS = [
 ]
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = "8nyq*_g97p57_t()zandmr+cp$5gc=vs!4#w=%h3skrd&+h(5n"
+SECRET_KEY = "7^0kuyrxhk92j29u($)(8nqvbu!hpb8e@%7us2@7alj!1twqn!"
 
 TEMPLATES = [
     {

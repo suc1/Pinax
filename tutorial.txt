@@ -1,6 +1,9 @@
 1. https://pinaxproject.com/pinax/
 2. Quick Start
+	pip install Django==2.0.13
 	pip3 install pinax-cli
+	//git clone https://github.com/suc1/Pinax.git
+	//cd Pinax
 	pinax start account mysite
 
 3. Install npm (Node Package Manager 5.6 old), Node.js 11.13 old
@@ -32,6 +35,7 @@ sudo ln -s /usr/local/lib/nodejs/node-$VERSION-$DISTRO/bin/npx /usr/bin/npx
 	cd mysite
 	npm install
 	//npm audit fix
+	//npm audit fix --force
 	//npm install -g npm-install-peers
 	//npm-install-peers
 	pip3 install -r requirements.txt
@@ -39,4 +43,22 @@ sudo ln -s /usr/local/lib/nodejs/node-$VERSION-$DISTRO/bin/npx /usr/bin/npx
 	./manage.py loaddata sites
 	npm run dev
 	http://localhost:3000/
+
+5.2 IDE
+	Visual Studio Code:		https://code.visualstudio.com/
+	PyCharm:				https://www.jetbrains.com/pycharm/
+	sudo snap install pycharm-community --classic
+	pycharm-community&
+	Sublime Text: 			https://www.sublimetext.com/
+	
+6. Account (django 2.1)
+6.1 'AnonymousUser' object has no attribute '_meta'
+	https://github.com/pinax/django-user-accounts/issues/292
+6.2 ModuleNotFoundError at /account/signup/,	No module named 'accountdemo'
+	//To confirm this email address, go to http://localhost:8000/account/confirm_email/d878c3e02ebb4ddfad2b7d5aa100bde674eb53544bb8b147756d313329464617/
+	
+6.3 log //Not work, but can see from console
+	https://stackoverflow.com/questions/19256919/location-of-django-logs-and-errors/19257221
+6.4 schuman + ford
+	./manage.py collectstatic
 
