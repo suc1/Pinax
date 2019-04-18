@@ -11,6 +11,9 @@ urlpatterns = [
     path("", TemplateView.as_view(template_name="homepage.html"), name="home"),
     path("admin/", admin.site.urls),
     path("account/", include("account.urls")),
+    # other urls
+    #url(r"^blog/", include("pinax.blog.urls", namespace="pinax_blog")),
+    path(r"blog/", include("pinax.blog.urls", namespace="pinax_blog")),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -52,13 +52,50 @@ sudo ln -s /usr/local/lib/nodejs/node-$VERSION-$DISTRO/bin/npx /usr/bin/npx
 	Sublime Text: 			https://www.sublimetext.com/
 	
 6. Account (django 2.1)
-6.1 'AnonymousUser' object has no attribute '_meta'
+6.1 python3 manage.py createsuperuser	dev+Y----6-----!
+6.2 'AnonymousUser' object has no attribute '_meta'
 	https://github.com/pinax/django-user-accounts/issues/292
-6.2 ModuleNotFoundError at /account/signup/,	No module named 'accountdemo'
+6.3 ModuleNotFoundError at /account/signup/,	No module named 'accountdemo'
 	//To confirm this email address, go to http://localhost:8000/account/confirm_email/d878c3e02ebb4ddfad2b7d5aa100bde674eb53544bb8b147756d313329464617/
 	
-6.3 log //Not work, but can see from console
+6.4 log //Not work, but can see from console
 	https://stackoverflow.com/questions/19256919/location-of-django-logs-and-errors/19257221
-6.4 schuman + ford
+6.5 schuman + ford
 	./manage.py collectstatic
+	
+7. Adding Another Pinax App
+    Add "pinax-amazing==2.0.1," into requirements.txt 
+	pip3 install -r requirements.txt
+	Modify INSTALLED_APPS in settings.py
+	./manage.py migrate
+	Modify urlpatterns in urls.py
+
+8. Pinax Starter Projects: zero -> account
+	pinax start blog myblog
+8.1 pinax projects
+			Release Project
+			------- ---------------
+			  4.0.4 account
+			  4.0.4 blog
+			  2.0.4 company
+					documents
+					social-auth			//Twitter, Facebook, and Google authentication
+			  4.0.4 static				//a robust mocking and design tool
+			  4.0.4 stripe
+					team-wiki
+			  3.0.4 waitinglist
+					wiki
+			  4.0.4 zero
+
+	
+9. Install App
+	pip3 install pinax-blog
+	Setup in README.md
+	pip install Markdown==2.6.11
+	
+	pip3 install -r requirements.txt
+	./manage.py migrate
+	./manage.py loaddata sites
+	npm run dev
+	http://localhost:3000/
 

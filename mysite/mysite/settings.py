@@ -78,7 +78,7 @@ STATICFILES_FINDERS = [
 ]
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = "7^0kuyrxhk92j29u($)(8nqvbu!hpb8e@%7us2@7alj!1twqn!"
+SECRET_KEY = "&w)qr^67n4ii0sh%(a$_wf=o@grl2b)dt81z!9(0)6y%54th4-"
 
 TEMPLATES = [
     {
@@ -139,6 +139,10 @@ INSTALLED_APPS = [
 
     # project
     "mysite",
+    
+    # other apps
+    "pinax.blog",
+    "pinax.images",
 ]
 
 ADMIN_URL = "admin:index"
